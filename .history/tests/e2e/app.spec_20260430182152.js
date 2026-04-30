@@ -35,11 +35,8 @@ test('End-to-end user workflow', async () => {
 
     // --- TODO: Task 4: Delete the todo item ---
     // 1. Find the delete button within the todo item.
-    const deleteButton = todoItem.locator('.delete-btn');
     // 2. Click the delete button.
-    await deleteButton.click();
     // 3. Assert that the todo item is no longer visible on the page.
-    await expect(todoItem).not.toBeVisible();
 
 
     // Close the app

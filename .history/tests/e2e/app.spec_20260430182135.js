@@ -26,20 +26,14 @@ test('End-to-end user workflow', async () => {
 
     // --- TODO: Task 3: Mark the todo item as complete ---
     // 1. Find the checkbox within the new todo item.
-    const checkbox = todoItem.locator('input[type="checkbox"]');
     // 2. Click the checkbox.
-    await checkbox.click();
     // 3. Assert that the todo item now has the 'completed' class.
-    await expect(todoItem).toHaveClass(/completed/);
 
 
     // --- TODO: Task 4: Delete the todo item ---
     // 1. Find the delete button within the todo item.
-    const deleteButton = todoItem.locator('.delete-btn');
     // 2. Click the delete button.
-    await deleteButton.click();
     // 3. Assert that the todo item is no longer visible on the page.
-    await expect(todoItem).not.toBeVisible();
 
 
     // Close the app
