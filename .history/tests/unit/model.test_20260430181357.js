@@ -44,9 +44,7 @@ describe('TodoService Unit Tests', () => {
     });
 
     test('should not add a todo if text is empty', () => {
-        // Call addTodo with an empty string.
-        service.addTodo('');
+        // TODO: Call addTodo with an empty string.
         // Assert that the todos array still has a length of 0.
-        expect(service.todos).toHaveLength(0);
     });
 });

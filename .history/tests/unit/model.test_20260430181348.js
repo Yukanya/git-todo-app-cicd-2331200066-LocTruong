@@ -34,19 +34,13 @@ describe('TodoService Unit Tests', () => {
     });
 
     test('should remove a todo', () => {
-        // Add a todo.
-        service.addTodo('Test todo');
-        const todoId = service.todos[0].id;
+        // TODO: Add a todo.
         // Get its ID and call the removeTodo method.
-        service.removeTodo(todoId);
         // Assert that the service's todos array is now empty (length of 0).
-        expect(service.todos).toHaveLength(0);
     });
 
     test('should not add a todo if text is empty', () => {
-        // Call addTodo with an empty string.
-        service.addTodo('');
+        // TODO: Call addTodo with an empty string.
         // Assert that the todos array still has a length of 0.
-        expect(service.todos).toHaveLength(0);
     });
 });
