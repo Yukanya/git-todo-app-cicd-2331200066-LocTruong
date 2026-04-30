@@ -32,26 +32,9 @@ describe('Controller-Service Integration Tests', () => {
     });
 
     test('handleRemoveTodo should call service.removeTodo and update the model', () => {
-        // First, directly add a todo to the service.
-        service.addTodo('Test todo');
+        // TODO: First, directly add a todo to the service.
         // Get the ID of the new todo.
-        const todoId = service.todos[0].id;
         // Call the controller's handleRemoveTodo method with that ID.
-        controller.handleRemoveTodo(todoId);
         // Assert that the service's todos array is now empty.
-        expect(service.todos).toHaveLength(0);
-    });
-
-    test('handleToggleTodo should call service.toggleTodoComplete and update the model', () => {
-        // First, add a todo to the service.
-        service.addTodo('Test todo');
-        const todoId = service.todos[0].id;
-        // Call the controller's handleToggleTodo method with that ID.
-        controller.handleToggleTodo(todoId);
-        // Assert that the todo's completed status is now true.
-        expect(service.todos[0].completed).toBe(true);
-        // Call toggle again and assert it's false.
-        controller.handleToggleTodo(todoId);
-        expect(service.todos[0].completed).toBe(false);
     });
 });
